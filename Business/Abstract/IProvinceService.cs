@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IProvinceService
     {
         IDataResult<List<Province>> GetAll();
-        IDataResult<Province> GetById();
+        IDataResult<Province> GetById(int id);
         IResult Add(Province province);
         IResult Update(Province province);
         IResult Delete(Province province);

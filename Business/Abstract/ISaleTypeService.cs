@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface ISaleTypeService
     {
         IDataResult<List<SaleType>> GetAll();
-        IDataResult<SaleType> GetById();
+        IDataResult<SaleType> GetById(int id);
         IResult Add(SaleType saleType);
         IResult Update(SaleType saleType);
         IResult Delete(SaleType saleType);

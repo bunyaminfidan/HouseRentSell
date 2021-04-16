@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IStreetService
     {
         IDataResult<List<Street>> GetAll();
-        IDataResult<Street> GetById();
+        IDataResult<Street> GetById(int id);
         IResult Add(Street street);
         IResult Update(Street street);
         IResult Delete(Street street);

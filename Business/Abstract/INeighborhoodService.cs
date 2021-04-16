@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface INeighborhoodService
     {
         IDataResult<List<Neighborhood>> GetAll();
-        IDataResult<Neighborhood> GetById();
+        IDataResult<Neighborhood> GetById(int id);
         IResult Add(Neighborhood neighborhood);
         IResult Update(Neighborhood neighborhood);
         IResult Delete(Neighborhood neighborhood);

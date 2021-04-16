@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IHouseService
     {
         IDataResult<List<House>> GetAll();
-        IDataResult<House> GetById();
+        IDataResult<House> GetById(int id);
         IResult Add(House house);
         IResult Update(House house);
         IResult Delete(House house);

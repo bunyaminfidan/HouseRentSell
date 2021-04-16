@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IHeatingTypeService
     {
         IDataResult<List<HeatingType>> GetAll();
-        IDataResult<HeatingType> GetById();
+        IDataResult<HeatingType> GetById(int id);
         IResult Add(HeatingType heatingType);
         IResult Update(HeatingType heatingType);
         IResult Delete(HeatingType heatingType);

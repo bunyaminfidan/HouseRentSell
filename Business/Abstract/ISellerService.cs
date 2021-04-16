@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface ISellerService
     {
         IDataResult<List<Seller>> GetAll();
-        IDataResult<Seller> GetById();
+        IDataResult<Seller> GetById(int id);
         IResult Add(Seller seller);
         IResult Update(Seller seller);
         IResult Delete(Seller seller);

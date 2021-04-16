@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IDistrictService
     {
         IDataResult<List<District>> GetAll();
-        IDataResult<District> GetById();
+        IDataResult<District> GetById(int id);
         IResult Add(District district);
         IResult Update(District district);
         IResult Delete(District district);

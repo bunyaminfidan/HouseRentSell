@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IHomeImageService
     {
         IDataResult<List<HomeImage>> GetAll();
-        IDataResult<HomeImage> GetById();
+        IDataResult<HomeImage> GetById(int id);
         IResult Add(HomeImage homeImage);
         IResult Update(HomeImage homeImage);
         IResult Delete(HomeImage homeImage);
