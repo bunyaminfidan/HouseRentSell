@@ -71,5 +71,13 @@ namespace DataAccess.Constans
         public static string UserDeleted = "Kullanıcı silinidi";
         public static string UserGetAll = "Kullanıcılar listelendi";
         public static string UserGetById = "Seçili kullanıcı listelendi";
+
+        public static string AuthorizationDenied = "Yetkiniz yok";
+        public static string UserRegistered = "Kayıt tamamlandı";
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+        public static string PasswordError = "Parola hatalı";
+        public static string SuccessfulLogin = "Başarılı giriş";
+        public static string UserAlreadyExists = "Kullanıcı mevcut";
+        public static string AccessTokenCreated = "Token oluşturuldu";
     }
 }

@@ -10,12 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BusinessAspects\Autofac\" />
-    <Folder Include="DependencyResolves\Autofac\" />
-    <Folder Include="ValidationRules\FluentValidation\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Autofac" Version="6.1.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />

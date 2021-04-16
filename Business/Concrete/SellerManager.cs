@@ -4,6 +4,7 @@ using System.Text;
 using Business.Abstract;
 using Core.Utilitis.Results;
 using DataAccess.Abstract;
+using DataAccess.Constans;
 using Entities.Concrete;
 
 namespace Business.Concrete
@@ -19,27 +20,30 @@ namespace Business.Concrete
 
         public IResult Add(Seller seller)
         {
-            throw new NotImplementedException();
+            _sellerDal.Add(seller);
+            return new SuccessResult(Messages.SellerAdded);
         }
 
         public IResult Delete(Seller seller)
         {
-            throw new NotImplementedException();
+            _sellerDal.Delete(seller);
+            return new SuccessResult(Messages.SellerDeleted);
         }
 
         public IDataResult<List<Seller>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Seller>>(_sellerDal.GetAll(), Messages.SellerGetAll);
         }
 
         public IDataResult<Seller> GetById(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Seller>(_sellerDal.Get(b => b.Id == id), Messages.SellerGetById);
         }
 
         public IResult Update(Seller seller)
         {
-            throw new NotImplementedException();
+            _sellerDal.Update(seller);
+            return new SuccessResult(Messages.SellerUpdated);
         }
     }
 }

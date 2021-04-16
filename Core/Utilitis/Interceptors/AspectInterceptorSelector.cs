@@ -17,12 +17,10 @@ namespace Core.Utilitis.Interceptors
         public IInterceptor[] SelectInterceptors(Type type, MethodInfo method, IInterceptor[] interceptors)
         {
 
-            var classAttributes = type.GetCustomAttributes<MethodInterceptionBaseAttribute>
-    (true).ToList();
+            var classAttributes = type.GetCustomAttributes<MethodInterceptionBaseAttribute>(true).ToList();
             var methodAttributes = type.GetMethod(method.Name)
                 .GetCustomAttributes<MethodInterceptionBaseAttribute>(true);
             classAttributes.AddRange(methodAttributes);
-
             classAttributes.Add(new TransactionScopeAspect()); // Hata sırasında işlemleri geri alır.
             classAttributes.Add(new ExceptionLogAspect(typeof(FileLogger))); //Loglama
 
