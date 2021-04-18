@@ -1,7 +1,3 @@
-
-
-
-
 using Business.Abstract;
 using Business.Concrete;
 using Core.DependencyResolvers;

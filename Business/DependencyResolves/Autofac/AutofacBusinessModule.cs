@@ -21,8 +21,8 @@ namespace Business.DependencyResolves.Autofac
         protected override void Load(ContainerBuilder builder)
         {
 
-            //builder.RegisterType<CarManager>().As<ICarService>().SingleInstance();
-            //builder.RegisterType<EfCarDal>().As<ICarDal>().SingleInstance();
+            builder.RegisterType<DistrictManager>().As<IDistrictService>().SingleInstance();
+            builder.RegisterType<EfDistrictDal>().As<IDistrictDal>().SingleInstance();
 
             //builder.RegisterType<BrandManager>().As<IBrandService>().SingleInstance();
             //builder.RegisterType<EfBrandDal>().As<IBrandDal>().SingleInstance();
