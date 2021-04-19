@@ -11,13 +11,13 @@ namespace Business.ValidationRules.FluentValidation
         public HomeAdressValidator()
         {
             RuleFor(h => h.HomeId).NotEmpty();
-            RuleFor(h => h.Province).NotEmpty();
-            RuleFor(h => h.District).NotEmpty(); 
-            RuleFor(h => h.Neighborhood).NotEmpty();
-            RuleFor(h => h.Street).NotEmpty();
+            RuleFor(h => h.ProvinceId).NotEmpty();
+            RuleFor(h => h.DistrictId).NotEmpty(); 
+            RuleFor(h => h.NeighborhoodId).NotEmpty();
+       
             RuleFor(h => h.ApartmentBuilding).NotEmpty();
             RuleFor(h => h.Floor).NotEmpty();
-            RuleFor(h => h.ApartmentNo).NotEmpty();
+            RuleFor(h => h.DoorNumber).NotEmpty();
 
         }
     }

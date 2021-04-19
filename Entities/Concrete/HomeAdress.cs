@@ -1,7 +1,7 @@
-﻿using Core.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Entities;
 
 namespace Entities.Concrete
 {
@@ -9,13 +9,12 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int HomeId { get; set; }
-        public int Province { get; set; }
-        public int District { get; set; }
-        public int Neighborhood { get; set; }
-        public int Street { get; set; }
+        public int ProvinceId { get; set; }
+        public int DistrictId { get; set; }
+        public int NeighborhoodId { get; set; }
         public int ApartmentBuilding { get; set; }
         public int Floor { get; set; }
-        public int ApartmentNo { get; set; }
+        public int DoorNumber { get; set; }
 
     }
 }

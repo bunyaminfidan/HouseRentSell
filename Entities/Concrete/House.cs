@@ -16,9 +16,9 @@ namespace Entities.Concrete
         public bool Furniture { get; set; }
         public bool Balcony { get; set; }
         public string Description { get; set; }
-        public int SaleType { get; set; }
-        public int Adress { get; set; }
-        public int HeatingType { get; set; }
+        public int SaleTypeId { get; set; }
+        public int AdressId { get; set; }
+        public int HeatingTypeId { get; set; }
 
 
 

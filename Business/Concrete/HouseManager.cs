@@ -6,6 +6,7 @@ using Core.Utilitis.Results;
 using DataAccess.Abstract;
 using DataAccess.Constans;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -40,6 +41,12 @@ namespace Business.Concrete
         public IDataResult<House> GetById(int id)
         {
             return new SuccessDataResult<House>(_houseDal.Get(b => b.Id == id), Messages.HouseGetById);
+        }
+
+        public IDataResult<List<HouseDetail>> GetAllHouseDetails()
+        {
+            return new SuccessDataResult<List<HouseDetail>>(_houseDal.GetHouseDetails(), Messages.HouseGetById);
+       
         }
 
         public IResult Update(House house)

@@ -20,7 +20,7 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<HeatingType> HeatingTypes { get; set; }
-        public HomeAdress HomeAdresses { get; set; }
+        public DbSet<HomeAdress> HomeAdresses { get; set; }
         public DbSet<HomeImage> HomeImages { get; set; }
         public DbSet<House> Houses { get; set; }
         public DbSet<Neighborhood> Neighborhoods { get; set; }

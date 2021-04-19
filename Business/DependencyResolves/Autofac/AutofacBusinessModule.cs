@@ -45,10 +45,8 @@ namespace Business.DependencyResolves.Autofac
             builder.RegisterType<ProvinceManager>().As<IProvinceService>().SingleInstance();
             builder.RegisterType<EfProvinceDal>().As<IProvinceDal>().SingleInstance();
 
-
             builder.RegisterType<SaleTypeManager>().As<ISaleTypeService>().SingleInstance();
             builder.RegisterType<EfSaleTypeDal>().As<ISaleTypeDal>().SingleInstance();
-
 
             builder.RegisterType<SellerManager>().As<ISellerService>().SingleInstance();
             builder.RegisterType<EfSellerDal>().As<ISellerDal>().SingleInstance();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Core.Utilitis.Results;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Abstract
 {
@@ -13,5 +14,7 @@ namespace Business.Abstract
         IResult Add(House house);
         IResult Update(House house);
         IResult Delete(House house);
+
+        IDataResult<List<HouseDetail>> GetAllHouseDetails();
     }
 }

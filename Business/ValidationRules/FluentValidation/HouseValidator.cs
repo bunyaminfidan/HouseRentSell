@@ -18,9 +18,9 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(h => h.Furniture).NotEmpty();
             RuleFor(h => h.Balcony).NotEmpty();
             RuleFor(h => h.Description).NotEmpty();
-            RuleFor(h => h.SaleType).NotEmpty();
-            RuleFor(h => h.Adress).NotEmpty();
-            RuleFor(h => h.HeatingType).NotEmpty();
+            RuleFor(h => h.SaleTypeId).NotEmpty();
+            RuleFor(h => h.AdressId).NotEmpty();
+            RuleFor(h => h.HeatingTypeId).NotEmpty();
         }
     }
 }
