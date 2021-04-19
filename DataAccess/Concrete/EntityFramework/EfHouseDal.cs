@@ -7,11 +7,14 @@ using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfHouseDal : EfEntityRepositoryBase<House, HouseRentSellDatabaseContext>, IHouseDal
     {
+
+
         public List<HouseDetail> GetHouseDetails(Expression<Func<House, bool>> filter = null)
         {
             using (HouseRentSellDatabaseContext context = new HouseRentSellDatabaseContext())
@@ -57,8 +60,18 @@ namespace DataAccess.Concrete.EntityFramework
                                  ApartmentBuilding = homeAdress.ApartmentBuilding,
                                  Floor = homeAdress.Floor,
                                  DoorNumber = homeAdress.DoorNumber
+
                              };
                 return result.ToList();
+
+
+
+
+
+
+
+
+
             }
 
         }
