@@ -53,10 +53,6 @@ namespace Business.DependencyResolves.Autofac
             builder.RegisterType<SellerManager>().As<ISellerService>().SingleInstance();
             builder.RegisterType<EfSellerDal>().As<ISellerDal>().SingleInstance();
 
-
-            builder.RegisterType<StreetManager>().As<IStreetService>().SingleInstance();
-            builder.RegisterType<EfStreetDal>().As<IStreetDal>().SingleInstance();
-
             builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
             builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
 

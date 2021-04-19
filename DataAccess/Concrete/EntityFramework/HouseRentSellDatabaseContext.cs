@@ -27,7 +27,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Province> Provinces { get; set; }
         public DbSet<SaleType> SaleTypes { get; set; }
         public DbSet<Seller> Sellers { get; set; }
-        public DbSet<Street> Streets { get; set; }
 
     }
 }
