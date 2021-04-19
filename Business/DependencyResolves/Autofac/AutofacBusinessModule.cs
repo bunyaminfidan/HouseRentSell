@@ -24,30 +24,41 @@ namespace Business.DependencyResolves.Autofac
             builder.RegisterType<DistrictManager>().As<IDistrictService>().SingleInstance();
             builder.RegisterType<EfDistrictDal>().As<IDistrictDal>().SingleInstance();
 
-            //builder.RegisterType<BrandManager>().As<IBrandService>().SingleInstance();
-            //builder.RegisterType<EfBrandDal>().As<IBrandDal>().SingleInstance();
+            builder.RegisterType<HeatingTypeManager>().As<IHeatingTypeService>().SingleInstance();
+            builder.RegisterType<EfHeatingTypeDal>().As<IHeatingTypeDal>().SingleInstance();
 
-            //builder.RegisterType<ColorManager>().As<IColorService>().SingleInstance();
-            //builder.RegisterType<EfColorDal>().As<IColorDal>().SingleInstance();
+            builder.RegisterType<HomeAdressManager>().As<IHomeAdressService>().SingleInstance();
+            builder.RegisterType<EfHomeAdressDal>().As<IHomeAdressDal>().SingleInstance();
 
-            //builder.RegisterType<CustomerManager>().As<ICustomerService>().SingleInstance();
-            //builder.RegisterType<EfCustomerDal>().As<ICustomerDal>().SingleInstance();
+            builder.RegisterType<HomeImageManager>().As<IHomeImageService>().SingleInstance();
+            builder.RegisterType<EfHomeImageDal>().As<IHomeImageDal>().SingleInstance();
 
-            //builder.RegisterType<RentalManager>().As<IRentalService>().SingleInstance();
-            //builder.RegisterType<EfRentalDal>().As<IRentalDal>().SingleInstance();
+            builder.RegisterType<HouseManager>().As<IHouseService>().SingleInstance();
+            builder.RegisterType<EfHouseDal>().As<IHouseDal>().SingleInstance();
 
-            //builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
-            //builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
 
-            //builder.RegisterType<CarImageManager>().As<ICarImageService>().SingleInstance();
-            //builder.RegisterType<EfCarImageDal>().As<ICarImageDal>().SingleInstance();
+            builder.RegisterType<NeighborhoodManager>().As<INeighborhoodService>().SingleInstance();
+            builder.RegisterType<EfNeighborhoodDal>().As<INeighborhoodDal>().SingleInstance();
 
-            //builder.RegisterType<FakeCardManager>().As<IFakeCardService>().SingleInstance();
-            //builder.RegisterType<EfFakeCardDal>().As<IFakeCardDal>().SingleInstance();
+            builder.RegisterType<ProvinceManager>().As<IProvinceService>().SingleInstance();
+            builder.RegisterType<EfProvinceDal>().As<IProvinceDal>().SingleInstance();
 
-            //builder.RegisterType<RegisteredCreditCardManager>().As<IRegisteredCreditCardService>().SingleInstance();
-            //builder.RegisterType<EfRegisteredCreditCardDal>().As<IRegisteredCreditCardDal>().SingleInstance();
 
+            builder.RegisterType<SaleTypeManager>().As<ISaleTypeService>().SingleInstance();
+            builder.RegisterType<EfSaleTypeDal>().As<ISaleTypeDal>().SingleInstance();
+
+
+            builder.RegisterType<SellerManager>().As<ISellerService>().SingleInstance();
+            builder.RegisterType<EfSellerDal>().As<ISellerDal>().SingleInstance();
+
+
+            builder.RegisterType<StreetManager>().As<IStreetService>().SingleInstance();
+            builder.RegisterType<EfStreetDal>().As<IStreetDal>().SingleInstance();
+
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
 
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
